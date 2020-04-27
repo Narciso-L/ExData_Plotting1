@@ -48,7 +48,7 @@ plot(dateTimeCol, finalData$Voltage, xlab="datetime", ylab="Voltage", col="black
 plot(dateTimeCol, finalData$Sub_metering_1, xlab="", ylab="Energy sub metering", col="black", type="l")
 lines(dateTimeCol, finalData$Sub_metering_2, col="red", type="l")
 lines(dateTimeCol, finalData$Sub_metering_3, col="blue", type="l")
-legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), lty=1, lwd=2.5)
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), lty=1, lwd=2, bty="n")
 
 # Bottom-right
 plot(dateTimeCol, finalData$Global_reactive_power, xlab="datetime", ylab="Global_reactive_power",  col="black", type="l")
